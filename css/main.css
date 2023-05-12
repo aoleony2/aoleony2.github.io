@@ -1,0 +1,182 @@
+/*this is a
+multi-line comment
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.855);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  margin: 0px;
+  font-size: 20px;
+  /* base url is in css folder */
+  background: url(../images/shanhai.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-image: url("shanhai.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat; */
+}
+
+nav, header, footer {
+  display: block;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul {
+  /* no scroll bars for the nav buttons */
+  overflow: hidden;
+  position: -webkit-sticky; /* safari */ 
+  position: sticky;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  background: #eee;
+  opacity: 0.7;
+  float: right;
+  list-style: none;
+  margin: 2px;
+  padding: 2px 30px;
+}
+
+nav  > ul > li > a {
+  text-decoration: none;
+}
+
+nav li:hover {
+  opacity: 1;
+}
+
+h1 {
+  text-align: left;
+  font-size: 4vw;
+  user-select: none;
+}
+
+.title {
+  margin: auto;
+  width: 70%;
+}
+
+.main, form, .experiment {
+  width: 70%;
+  opacity: 0.9;
+  border: none;
+  margin: 20px;
+}
+/* default style for paragraphs */
+p {
+  max-width: 100%;
+  background-color: #E7E9EB;
+  /* text-transform: uppercase; */
+  padding: 10px;
+  margin: 0;
+}
+
+.fill-canvas-image-container, .fill-canvas-drop-container {
+  display: block;
+  float: left;
+}
+
+.fonts {
+  display: block;
+  font-size: 30px;
+  float: left;
+  clear: left;
+  margin: 0;
+
+}
+
+input[type="text"]:focus {
+  outline-offset: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.audiowide {
+  font-family: "Audiowide", sans-serif;
+}
+
+div.sofia {
+  font-family: Sofia, sans-serif;
+  
+  
+}
+
+div.trirong {
+  font-family: Trirong, monospace;
+}
+
+/* page break before h1 */
+@media print {
+  h1 {
+    break-after: always;
+  }
+}
+
+
+
+#warning {
+  border-left: solid 6px yellow;
+  background-color: lightyellow;  
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+details {
+  width: 50%;
+}
+
+details > summary {
+  padding: 4px;
+  width: 200px;
+  margin-bottom: 2px;
+  border: none;
+  background-color: #eeeeee;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+
+#table > * > tr > * {
+  padding: 5px;
+  color: blue;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../images/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+
+}
